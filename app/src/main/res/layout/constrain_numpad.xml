@@ -10,64 +10,57 @@
         android:id="@+id/VerticalLine1"
         android:layout_width="1dp"
         android:layout_height="515dp"
-        android:layout_marginStart="102dp"
         android:background="@color/line"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonFour"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/VerticalLine2"
         android:layout_width="1dp"
         android:layout_height="515dp"
-        android:layout_marginStart="205dp"
         android:background="@color/line"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonFive"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/VerticalLine3"
         android:layout_width="1dp"
         android:layout_height="515dp"
-        android:layout_marginStart="308dp"
         android:background="@color/line"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonSix"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/HorizontalLine1"
         android:layout_width="412dp"
         android:layout_height="1dp"
-        android:layout_marginTop="102dp"
         android:background="@color/line"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/VerticalLine2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSplit" />
 
     <Button
         android:id="@+id/HorizontalLine2"
         android:layout_width="412dp"
         android:layout_height="1dp"
-        android:layout_marginTop="205dp"
         android:background="@color/line"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/VerticalLine2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonEight" />
 
     <Button
         android:id="@+id/HorizontalLine3"
         android:layout_width="412dp"
         android:layout_height="1dp"
-        android:layout_marginTop="308dp"
         android:background="@color/line"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/VerticalLine2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonFive" />
 
     <Button
         android:id="@+id/HorizontalLine4"
         android:layout_width="306dp"
         android:layout_height="1dp"
-        android:layout_marginTop="411dp"
         android:background="@color/line"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonSplit" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonTwo" />
 
     <Button
         android:id="@+id/buttonC"
