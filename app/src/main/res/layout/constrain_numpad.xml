@@ -152,13 +152,14 @@
         android:id="@+id/buttonEqually"
         android:layout_width="102dp"
         android:layout_height="205dp"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:background="@color/orangeColor"
         android:fontFamily="sans-serif-thin"
         android:text="@string/buttonEqually"
         android:textColor="@color/buttonNumber"
         android:textSize="@dimen/key_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonThree"
         app:layout_constraintTop_toBottomOf="@+id/buttonPlus" />
 
     <Button
