@@ -3,7 +3,6 @@ package ru.aslazarev.calc;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -15,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         TextView screen = findViewById(R.id.action_screen);
 
@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonC = findViewById(R.id.buttonC);
         Button buttonBack = findViewById(R.id.buttonBack);
+
+        Button buttonEqually = findViewById(R.id.buttonEqually);
 
 
         buttonOne.setOnClickListener(view -> {
@@ -84,19 +86,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
         buttonPlus.setOnClickListener(view -> {
-            screen.append(buttonPlus.getText());
+            checkSymbol(buttonPlus, screen);
+
         });
 
         buttonMinus.setOnClickListener(view -> {
-            screen.append(buttonMinus.getText());
+            checkSymbol(buttonMinus, screen);
         });
 
         buttonX.setOnClickListener(view -> {
-            screen.append(buttonX.getText());
+            checkSymbol(buttonX, screen);
         });
 
         buttonSplit.setOnClickListener(view -> {
-            screen.append(buttonSplit.getText());
+            checkSymbol(buttonSplit, screen);
         });
 
         buttonC.setOnClickListener(view -> {
@@ -105,9 +108,25 @@ public class MainActivity extends AppCompatActivity {
 
         buttonBack.setOnClickListener(view -> {
             StringBuilder screenString = new StringBuilder(screen.getText());
-            screenString.deleteCharAt(screenString.length() - 1);
-            screen.setText(screenString.toString());
+            if (screenString.length() > 0) {
+                screenString.deleteCharAt(screenString.length() - 1);
+                screen.setText(screenString.toString());
+            }
+        });
+
+        buttonEqually.setOnClickListener(view -> {
+            String expression = screen.getText().toString();
+            screen.setText(CalcLogic.getResult(expression));
         });
     }
+
+    private void checkSymbol(Button btn, TextView text){
+        int backSymbol = text.getText().length() - 1;
+        if (text.getText().charAt(backSymbol) != 'x' && text.getText().charAt(backSymbol) != '+'
+                && text.getText().charAt(backSymbol) != '/' && text.getText().charAt(backSymbol) != '-'){
+            text.append(btn.getText());
+        }
+    }
 }
+
 
