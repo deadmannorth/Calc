@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="key_text_size">48sp</dimen>
     <dimen name="key_text_size64">24sp</dimen>
+    <dimen name="key_text_size">48sp</dimen>
+    <dimen name="key_text_size72">72sp</dimen>
 </resources>
