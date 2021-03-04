@@ -19,5 +19,6 @@
     <string name="buttonSplit">/</string>
     <string name="buttonBack">←</string>
     <string name="buttonC">C</string>
+    <string name="buttonRadical">v</string>
 
 </resources>
