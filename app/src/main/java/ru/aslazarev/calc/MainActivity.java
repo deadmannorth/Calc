@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // Восстановление данных
+
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle instanceState) {
         super.onRestoreInstanceState(instanceState);
