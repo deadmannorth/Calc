@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonNine = findViewById(R.id.buttonNine);
         Button buttonZero = findViewById(R.id.buttonZero);
         Button buttonPoint = findViewById(R.id.buttonPoint);
+        Button buttonBrackets = findViewById(R.id.buttonBrackets);
 
         Button buttonPlus = findViewById(R.id.buttonPlus);
         Button buttonMinus = findViewById(R.id.buttonMinus);
@@ -98,6 +99,16 @@ public class MainActivity extends AppCompatActivity {
 
         buttonPoint.setOnClickListener(view -> {
             screen.append(buttonPoint.getText());
+            screenData.setScreen(screen);
+        });
+
+        buttonBrackets.setOnClickListener(view -> {
+            String Bracket = screen.getText().toString();
+            if (Bracket.contains("(")){
+                screen.append(")");
+            } else {
+                screen.append("(");
+            }
             screenData.setScreen(screen);
         });
 
