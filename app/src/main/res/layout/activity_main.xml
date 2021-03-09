@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/BackgroundColor"
     tools:context=".MainActivity">
 
     <com.google.android.material.switchmaterial.SwitchMaterial
@@ -16,13 +17,7 @@
 
     <TextView
         android:id="@+id/action_screen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:fontFamily="sans-serif-thin"
-        android:gravity="right"
-        android:textSize="@dimen/screen_text_size"
-        android:textStyle="italic"
+        style="@style/ActionScreenText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -8,12 +8,8 @@
         android:weightSum="4.1">
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonC"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonSymbol"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsSymbols"
             android:text="@string/buttonC"
-            android:textColor="@color/buttonSymbolText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
@@ -22,12 +18,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonSplit"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonSymbol"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsSymbols"
             android:text="@string/buttonSplit"
-            android:textColor="@color/buttonSymbolText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
              />
         <com.google.android.material.button.MaterialButton
@@ -36,12 +28,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonX"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonSymbol"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsSymbols"
             android:text="@string/buttonX"
-            android:textColor="@color/buttonSymbolText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
@@ -50,12 +38,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonBack"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonSymbol"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsSymbols"
             android:text="@string/buttonBack"
-            android:textColor="@color/buttonSymbolText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
     </TableRow>
@@ -72,12 +56,9 @@
         android:weightSum="4.1">
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonSeven"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/button7"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
+            android:theme="@style/AppThemeClassic"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
@@ -86,12 +67,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonEight"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/button8"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
@@ -100,12 +77,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonNine"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/button9"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
@@ -114,12 +87,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonMinus"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonSymbol"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsSymbols"
             android:text="@string/buttonMinus"
-            android:textColor="@color/buttonSymbolText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
     </TableRow>
@@ -136,12 +105,8 @@
         android:weightSum="4.1">
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonFour"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/button4"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
@@ -150,12 +115,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonFive"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/button5"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
              />
         <com.google.android.material.button.MaterialButton
@@ -164,12 +125,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonSix"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/button6"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
@@ -178,12 +135,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonPlus"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonSymbol"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsSymbols"
             android:text="@string/buttonPlus"
-            android:textColor="@color/buttonSymbolText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
     </TableRow>
@@ -200,12 +153,8 @@
         android:weightSum="4.1">
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonOne"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/button1"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
@@ -214,12 +163,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonTwo"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/button2"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
         />
         <com.google.android.material.button.MaterialButton
@@ -228,12 +173,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonThree"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/button3"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
@@ -243,12 +184,8 @@
         <com.google.android.material.button.MaterialButton
 
             android:id="@+id/buttonPercent"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonSymbol"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsSymbols"
             android:text="@string/buttonPercent"
-            android:textColor="@color/buttonSymbolText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
     </TableRow>
@@ -265,12 +202,8 @@
         android:weightSum="4.1">
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonBrackets"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/buttonBrackets"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
@@ -279,12 +212,8 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonZero"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/button0"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
@@ -293,28 +222,19 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonPoint"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonNumber"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsNumbers"
             android:text="@string/buttonPoint"
-            android:textColor="@color/buttonNumberText"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton
             style="@style/VerticalLine"
             app:cornerRadius="0dp"
             />
-
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonEqually"
-            style="@style/ButtonFormsNS"
-            android:backgroundTint="@color/buttonSymbolText"
-            android:fontFamily="sans-serif-thin"
+            style="@style/ButtonFormsEqually"
             android:text="@string/buttonEqually"
-            android:textColor="@color/buttonNumber"
-            android:textSize="@dimen/key_text_size"
             app:cornerRadius="0dp"
-            app:elevation="2dp" />
+            />
     </TableRow>
 </TableLayout>
