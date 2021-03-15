@@ -2,4 +2,6 @@
 <resources>
     <dimen name="key_text_size">18sp</dimen>
     <dimen name="screen_text_size">18sp</dimen>
+    <dimen name="theme_settings_key_size">32sp</dimen>
+    <dimen name="settings_key_size">72sp</dimen>
 </resources>
