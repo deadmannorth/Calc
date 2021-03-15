@@ -15,28 +15,35 @@ public class SettingsActivity extends CalcPreference {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        initThemeChooser();
+        //initThemeChooser();
 
         MaterialButton backToMainButton = findViewById(R.id.back_to_main);
         backToMainButton.setOnClickListener(view -> {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
-    }
 
-    private void initThemeChooser() {
-        initRadioButton(findViewById(R.id.materialRadioClassic),ClassicThemeStyle);
-        initRadioButton(findViewById(R.id.materialRadioDark), DarkThemeStyle);
-        initRadioButton(findViewById(R.id.materialRadioWhite),WhiteThemeStyle);
+        MaterialRadioButton classic = findViewById(R.id.materialRadioClassic);
+        MaterialRadioButton white = findViewById(R.id.materialRadioWhite);
+        MaterialRadioButton dark = findViewById(R.id.materialRadioDark);
         RadioGroup rg = findViewById(R.id.radioButtons);
-        ((MaterialRadioButton) rg.getChildAt(getCodeStyle(ClassicThemeStyle))).setChecked(true);
-    }
-
-    private void initRadioButton(View button, final int codeStyle) {
-        button.setOnClickListener(view -> {
-                setAppTheme(codeStyle);
-                recreate();
+        ((MaterialRadioButton) rg.getChildAt(getCodeStyle())).setChecked(true);
+        classic.setOnClickListener(view -> {
+            setAppTheme(ClassicThemeStyle);
+            recreate();
         });
+        white.setOnClickListener(view -> {
+            setAppTheme(WhiteThemeStyle);
+            recreate();
+        });
+        dark.setOnClickListener(view -> {
+            setAppTheme(DarkThemeStyle);
+            recreate();
+        });
+
+
+
+
     }
 
 }

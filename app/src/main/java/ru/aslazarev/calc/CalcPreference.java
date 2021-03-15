@@ -17,12 +17,12 @@ public class CalcPreference extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSavedTheme(getCodeStyle(ClassicThemeStyle));
+        getSavedTheme(getCodeStyle());
     }
 
-    protected int getCodeStyle(int themeCode){
+    protected int getCodeStyle(){
         SharedPreferences sharedPref = getSharedPreferences(appPrefs, MODE_PRIVATE);
-        return sharedPref.getInt(savedPrefs, themeCode);
+        return sharedPref.getInt(savedPrefs, 0);
     }
 
     protected void setAppTheme(int themeCode) {
