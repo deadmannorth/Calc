@@ -20,5 +20,10 @@
     <string name="buttonBack">←</string>
     <string name="buttonC">C</string>
     <string name="buttonBrackets">()</string>
+    <string name="settings">Settings</string>
+    <string name="white_theme">White theme</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="classic_theme">Classic theme</string>
+    <string name="back_to_main_button">back</string>
 
 </resources>

@@ -74,4 +74,13 @@
             <item name="android:textColor">?colorOnPrimary</item>
             <item name="android:textStyle">italic|bold</item>
         </style>
+
+        <style name="settings_screen_text">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:fontFamily">sans-serif-thin</item>
+            <item name="android:textSize">@dimen/theme_settings_key_size</item>
+            <item name="android:textColor">?colorOnPrimary</item>
+            <item name="android:textStyle">italic</item>
+        </style>
     </resources>

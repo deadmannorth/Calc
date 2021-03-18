@@ -11,4 +11,28 @@
         <item name="textColorEquallyButton">@color/buttonNumber</item>
     </style>
 
+    <style name="WhiteTheme" parent="AppThemeClassic">
+        <item name="colorOnBackground">@color/backgroundColor</item>
+        <item name="colorPrimary">@color/buttonNumber</item>
+        <item name="colorOnPrimary">@color/buttonSymbolText</item>
+        <item name="colorSecondary">@color/buttonNumber</item>
+        <item name="colorOnSecondary">@color/buttonEquallyTextDark</item>
+        <item name="colorAccent">@color/line</item>
+        <item name="colorEquallyButton">@color/buttonNumber</item>
+        <item name="textColorEquallyButton">@color/buttonNumberText</item>
+    </style>
+
+    <style name="DarkTheme" parent="AppThemeClassic">
+        <item name="colorOnBackground">@color/backgroundColorDark</item>
+        <item name="colorPrimary">@color/buttonDark</item>
+        <item name="colorOnPrimary">@color/buttonNumberTextDark</item>
+        <item name="colorSecondary">@color/buttonDark</item>
+        <item name="colorOnSecondary">@color/buttonSymbolTextDark</item>
+        <item name="colorAccent">@color/line</item>
+        <item name="colorEquallyButton">@color/buttonDark</item>
+        <item name="textColorEquallyButton">@color/buttonEquallyTextDark</item>
+    </style>
+
+
+
 </resources>

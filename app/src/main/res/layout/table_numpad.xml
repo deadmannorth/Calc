@@ -58,7 +58,6 @@
             android:id="@+id/buttonSeven"
             style="@style/ButtonFormsNumbers"
             android:text="@string/button7"
-            android:theme="@style/AppThemeClassic"
             app:cornerRadius="0dp"
             />
         <com.google.android.material.button.MaterialButton

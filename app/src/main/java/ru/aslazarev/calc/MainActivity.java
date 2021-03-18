@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -14,17 +16,25 @@ import android.widget.TextView;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends CalcPreference {
     private static final String KEY_SCREEN_DATA = "calc.screen.data";
     private CalcScreen screenData;
     TextView screen;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
-        SwitchMaterial switchTheme = findViewById(R.id.switchTheme);
+
+
+
+
+
+
 
         screenData = new CalcScreen();
         screen = findViewById(R.id.action_screen);
@@ -48,27 +58,14 @@ public class MainActivity extends AppCompatActivity {
         MaterialButton buttonC = findViewById(R.id.buttonC);
         MaterialButton buttonBack = findViewById(R.id.buttonBack);
         MaterialButton buttonEqually = findViewById(R.id.buttonEqually);
-
         MaterialButton buttonPercent = findViewById(R.id.buttonPercent);
+        MaterialButton goToSettings = findViewById(R.id.settings_button);
 
-        buttonPercent.setOnClickListener(view -> {
-            if (AppCompatDelegate.getDefaultNightMode() != AppCompatDelegate.MODE_NIGHT_YES) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-            } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-            }
-            recreate();
+
+        goToSettings.setOnClickListener(view ->{
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
         });
-
-        switchTheme.setOnClickListener(view -> {
-            if (AppCompatDelegate.getDefaultNightMode() != AppCompatDelegate.MODE_NIGHT_YES) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-            } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-            }
-            recreate();
-        });
-
 
 
         buttonOne.setOnClickListener(view -> {
