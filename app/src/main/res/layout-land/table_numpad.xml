@@ -21,7 +21,7 @@
             style="@style/ButtonFormsSymbols"
             android:text="@string/buttonSplit"
             app:cornerRadius="0dp"
-             />
+            />
         <com.google.android.material.button.MaterialButton
             style="@style/VerticalLine"
             app:cornerRadius="0dp"
@@ -50,7 +50,7 @@
             style="@style/HorizontalLine"
             app:cornerRadius="0dp"
             />
-     </TableRow>
+    </TableRow>
 
     <TableRow
         android:weightSum="4.1">
@@ -118,7 +118,7 @@
             style="@style/ButtonFormsNumbers"
             android:text="@string/button5"
             app:cornerRadius="0dp"
-             />
+            />
         <com.google.android.material.button.MaterialButton
             style="@style/VerticalLine"
             app:cornerRadius="0dp"
@@ -166,7 +166,7 @@
             style="@style/ButtonFormsNumbers"
             android:text="@string/button2"
             app:cornerRadius="0dp"
-        />
+            />
         <com.google.android.material.button.MaterialButton
             style="@style/VerticalLine"
             app:cornerRadius="0dp"

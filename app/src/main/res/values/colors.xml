@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="oceanColor">#29B6F6</color>
+    <color name="buttonSymbolText">#29B6F6</color>
+    <color name="buttonNumberText">#000000</color>
     <color name="buttonNumber">#FFFFFF</color>
     <color name="buttonSymbol">#CFD8DC</color>
+    <color name="backgroundColor">#FFFFFF</color>
+
     <color name="line">#90A4AE</color>
+
+    <color name="buttonDark">#000000</color>
+    <color name="backgroundColorDark">#000000</color>
+    <color name="buttonNumberTextDark">#FFFFFF</color>
+    <color name="buttonSymbolTextDark">#29B6F6</color>
+    <color name="buttonEquallyTextDark">#EF6C00</color>
 </resources>

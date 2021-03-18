@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppThemeClassic" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorOnBackground">@color/backgroundColor</item>
+        <item name="colorPrimary">@color/buttonNumber</item>
+        <item name="colorOnPrimary">@color/buttonNumberText</item>
+        <item name="colorSecondary">@color/buttonSymbol</item>
+        <item name="colorOnSecondary">@color/buttonSymbolText</item>
+        <item name="colorAccent">@color/line</item>
+        <item name="colorEquallyButton">@color/buttonSymbolText</item>
+        <item name="textColorEquallyButton">@color/buttonNumber</item>
+    </style>
+
+</resources>

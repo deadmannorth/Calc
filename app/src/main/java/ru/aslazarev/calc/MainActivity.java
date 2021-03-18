@@ -2,11 +2,17 @@ package ru.aslazarev.calc;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.TextView;
+
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.switchmaterial.SwitchMaterial;
 
 public class MainActivity extends AppCompatActivity {
     private static final String KEY_SCREEN_DATA = "calc.screen.data";
@@ -15,35 +21,54 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        SwitchMaterial switchTheme = findViewById(R.id.switchTheme);
+
         screenData = new CalcScreen();
-         screen = findViewById(R.id.action_screen);
+        screen = findViewById(R.id.action_screen);
 
-        Button buttonOne = findViewById(R.id.buttonOne);
-        Button buttonTwo = findViewById(R.id.buttonTwo);
-        Button buttonThree = findViewById(R.id.buttonThree);
-        Button buttonFour = findViewById(R.id.buttonFour);
-        Button buttonFive = findViewById(R.id.buttonFive);
-        Button buttonSix = findViewById(R.id.buttonSix);
-        Button buttonSeven = findViewById(R.id.buttonSeven);
-        Button buttonEight = findViewById(R.id.buttonEight);
-        Button buttonNine = findViewById(R.id.buttonNine);
-        Button buttonZero = findViewById(R.id.buttonZero);
-        Button buttonPoint = findViewById(R.id.buttonPoint);
+        MaterialButton buttonOne = findViewById(R.id.buttonOne);
+        MaterialButton buttonTwo = findViewById(R.id.buttonTwo);
+        MaterialButton buttonThree = findViewById(R.id.buttonThree);
+        MaterialButton buttonFour = findViewById(R.id.buttonFour);
+        MaterialButton buttonFive = findViewById(R.id.buttonFive);
+        MaterialButton buttonSix = findViewById(R.id.buttonSix);
+        MaterialButton buttonSeven = findViewById(R.id.buttonSeven);
+        MaterialButton buttonEight = findViewById(R.id.buttonEight);
+        MaterialButton buttonNine = findViewById(R.id.buttonNine);
+        MaterialButton buttonZero = findViewById(R.id.buttonZero);
+        MaterialButton buttonPoint = findViewById(R.id.buttonPoint);
+        MaterialButton buttonBrackets = findViewById(R.id.buttonBrackets);
+        MaterialButton buttonPlus = findViewById(R.id.buttonPlus);
+        MaterialButton buttonMinus = findViewById(R.id.buttonMinus);
+        MaterialButton buttonX = findViewById(R.id.buttonX);
+        MaterialButton buttonSplit = findViewById(R.id.buttonSplit);
+        MaterialButton buttonC = findViewById(R.id.buttonC);
+        MaterialButton buttonBack = findViewById(R.id.buttonBack);
+        MaterialButton buttonEqually = findViewById(R.id.buttonEqually);
 
-        Button buttonPlus = findViewById(R.id.buttonPlus);
-        Button buttonMinus = findViewById(R.id.buttonMinus);
-        Button buttonX = findViewById(R.id.buttonX);
-        Button buttonSplit = findViewById(R.id.buttonSplit);
+        MaterialButton buttonPercent = findViewById(R.id.buttonPercent);
 
-        Button buttonC = findViewById(R.id.buttonC);
-        Button buttonBack = findViewById(R.id.buttonBack);
+        buttonPercent.setOnClickListener(view -> {
+            if (AppCompatDelegate.getDefaultNightMode() != AppCompatDelegate.MODE_NIGHT_YES) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            }
+            recreate();
+        });
 
-        Button buttonEqually = findViewById(R.id.buttonEqually);
+        switchTheme.setOnClickListener(view -> {
+            if (AppCompatDelegate.getDefaultNightMode() != AppCompatDelegate.MODE_NIGHT_YES) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            }
+            recreate();
+        });
+
 
 
         buttonOne.setOnClickListener(view -> {
@@ -98,6 +123,16 @@ public class MainActivity extends AppCompatActivity {
 
         buttonPoint.setOnClickListener(view -> {
             screen.append(buttonPoint.getText());
+            screenData.setScreen(screen);
+        });
+
+        buttonBrackets.setOnClickListener(view -> {
+            String Bracket = screen.getText().toString();
+            if (Bracket.contains("(")){
+                screen.append(")");
+            } else {
+                screen.append("(");
+            }
             screenData.setScreen(screen);
         });
 
@@ -157,11 +192,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // Восстановление данных
+
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle instanceState) {
         super.onRestoreInstanceState(instanceState);
-        screenData = (CalcScreen) instanceState.getParcelable(KEY_SCREEN_DATA);
+        screenData = instanceState.getParcelable(KEY_SCREEN_DATA);
         screen.setText(screenData.getScreen());
     }
 
